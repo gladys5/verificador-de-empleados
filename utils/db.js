@@ -6,5 +6,9 @@ const db = new Sequelize({
   password: '1103',
   database: 'checking',
   logging: false,
+  dialectOptions: {
+    useUTC: false,
+  },
+  timezone: '-06:00',
 })
 module.exports = { db }

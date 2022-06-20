@@ -35,7 +35,7 @@ const outPutEmployee = async (req, res) => {
   if (!registration) {
     return res.status(404).json({
       status: 'error',
-      message: 'User not found',
+      message: 'employee not found',
     })
   }
   await registration.update({ exitTime, status: 'out' })
@@ -55,7 +55,7 @@ const exitEarlyEmployee = async (req, res) => {
   if (!registration) {
     return res.status(404).json({
       status: 'error',
-      message: 'User not found',
+      message: 'Employee not found',
     })
   }
 
